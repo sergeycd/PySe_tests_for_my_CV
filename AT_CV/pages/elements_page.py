@@ -9,4 +9,9 @@ class TestsOfPage(BasePage):
         get_name=self.element_is_visible(self.locators.NAME_AUTHOR).text
         return get_name
 
+    def test_open_tm(self):
+        click_like = self.element_is_visible(self.locators.BTN_LIKE).click()
+
+
+
 
